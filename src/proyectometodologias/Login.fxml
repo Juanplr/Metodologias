@@ -17,7 +17,7 @@
          <children>
             <ImageView fitHeight="250.0" fitWidth="196.0" pickOnBounds="true">
                <image>
-                  <Image url="images/wallpaper2.jpg" />
+                  <Image url="image/wallpaper2.jpg" />
                </image>
             </ImageView>
          </children>
