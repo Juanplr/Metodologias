@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="proyectometodologias.FXMLDocumentController">
+   <children>
+      <VBox layoutX="22.0" layoutY="22.0" prefHeight="180.0" prefWidth="137.0" spacing="15.0">
+         <children>
+            <Label text="ID">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Nombre">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Apellidos">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Direccion">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Fecha nacimiento">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="159.0" layoutY="22.0" prefHeight="180.0" prefWidth="225.0" spacing="10.0">
+         <children>
+            <TextField />
+            <TextField />
+            <TextField />
+            <TextField />
+            <TextField />
+         </children>
+      </VBox>
+      <TableView layoutX="22.0" layoutY="228.0" prefHeight="333.0" prefWidth="761.0">
+        <columns>
+          <TableColumn prefWidth="34.0" text="ID" />
+          <TableColumn prefWidth="182.0" text="Nombre" />
+            <TableColumn prefWidth="221.0" text="Apellidos" />
+            <TableColumn prefWidth="224.0" text="Direccion" />
+            <TableColumn prefWidth="99.0" text="Nacimiento" />
+        </columns>
+      </TableView>
+      <Button layoutX="442.0" layoutY="100.0" mnemonicParsing="false" text="Agregar" />
+      <Button layoutX="542.0" layoutY="100.0" mnemonicParsing="false" text="Actualizar" />
+      <Button layoutX="651.0" layoutY="100.0" mnemonicParsing="false" text="Borrar" />
+   </children>
+</AnchorPane>
