@@ -1,5 +1,8 @@
 create database metodologias_2;
 use metodologias_2;
+CREATE USER 'UserRemoto'@'localhost' IDENTIFIED BY 'clinica16';
+GRANT ALL PRIVILEGES ON * . * TO 'UserRemoto'@'localhost';
+FLUSH PRIVILEGES;
 
 drop table paciente;
 create table paciente(

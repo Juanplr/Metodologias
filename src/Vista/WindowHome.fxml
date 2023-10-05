@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectometodologias.WindowHomeController">
+<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.WindowHomeController">
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -17,12 +17,12 @@
       </ImageView>
       <HBox prefHeight="68.0" prefWidth="366.0" spacing="15.0">
          <children>
-            <Button mnemonicParsing="false" text="Paciente">
+            <Button fx:id="btnPaciente" mnemonicParsing="false" onAction="#Pacientes" text="Paciente">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" text="Psicologo">
+            <Button fx:id="btnPsicologo" mnemonicParsing="false" text="Psicologo">
                <font>
                   <Font size="18.0" />
                </font>
@@ -39,7 +39,7 @@
       </HBox>
       <HBox alignment="TOP_RIGHT" layoutX="400.0" prefHeight="68.0" prefWidth="200.0" spacing="15.0">
          <children>
-            <Button mnemonicParsing="false" text="Salir">
+            <Button fx:id="bntSalir" mnemonicParsing="false" text="Salir">
                <font>
                   <Font size="18.0" />
                </font>
