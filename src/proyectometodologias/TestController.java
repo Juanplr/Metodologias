@@ -13,7 +13,7 @@ import javafx.fxml.Initializable;
  *
  * @author inigu
  */
-public class WindowHomeController implements Initializable {
+public class TestController implements Initializable {
 
     /**
      * Initializes the controller class.
