@@ -34,4 +34,24 @@ public class Modelo {
         return verificacion;
     }
     
+    public ResultSet getPacientes() {
+        ResultSet rs=null;
+        try {
+            conexion = cn.conectar();
+            Statement smt;
+            smt=conexion.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+            String sql= "select * from paciente;";
+            rs= smt.executeQuery(sql);
+            //cn.cerrarconexion();
+        } catch (Exception e) {e.printStackTrace();}
+        return rs;
+    }
+    public void ActualizarPaciente(Paciente p) {
+        try {
+            conexion = cn.conectar();
+            PreparedStatement ps = conexion.prepareStatement("update paciente set nombre='"+p.getNombre()+"',fecha_nacimiento='"+p.getFechaN()+"', estado_civil='"+p.getEstadoC()+"',nivel_estudios='"+p.getNivelEstud()+"',ocupacion='"+p.getOcupacion()+"' where id='"+p.getId()+"';");
+            ps.executeUpdate();
+        } catch (Exception e) {e.printStackTrace();}
+    }
+    
 }
