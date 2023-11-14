@@ -11,7 +11,7 @@ public class Conector {
     private static final String url = "jdbc:mysql://localhost:3306/metodologias_2";
     private static final String user = "UserRemoto";
     private static final String password ="ProyectoMetodo";
-    
+
     private Conector(){}
     
     public Connection conectar(){
