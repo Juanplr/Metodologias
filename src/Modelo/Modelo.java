@@ -72,8 +72,8 @@ public class Modelo {
         ps.setString(6, paciente.getOcupacion());
       
        ps.execute(); 
-        ps.close(); // Cierra la sentencia
-        cn.cerrarconexion(); // Cierra la conexión
+        ps.close(); 
+        cn.cerrarconexion(); 
     } catch (SQLException ex) {
         ex.printStackTrace();
     }
