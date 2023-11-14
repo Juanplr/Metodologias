@@ -54,4 +54,30 @@ public class Modelo {
         } catch (Exception e) {e.printStackTrace();}
     }
     
+    public void agregarPaciente(Paciente paciente) {
+    try {
+        conexion = cn.conectar();
+        
+        // Agrega mensajes de depuración para verificar los valores
+        System.out.println("ID: " + paciente.getId());
+        System.out.println("Nombre: " + paciente.getNombre());
+        // ... Agrega más mensajes para otros valores
+
+        PreparedStatement ps = conexion.prepareStatement("INSERT INTO paciente (id, nombre, fecha_nacimiento, estado_civil, nivel_estudios, ocupacion) VALUES (?, ?, ?, ?, ?, ?)");
+        ps.setInt(1, paciente.getId());
+        ps.setString(2, paciente.getNombre());
+        ps.setString(3, paciente.getFechaN());
+        ps.setString(4, paciente.getEstadoC());
+        ps.setString(5, paciente.getNivelEstud());
+        ps.setString(6, paciente.getOcupacion());
+      
+       ps.execute(); 
+        ps.close(); // Cierra la sentencia
+        cn.cerrarconexion(); // Cierra la conexión
+    } catch (SQLException ex) {
+        ex.printStackTrace();
+    }
+}
+
+    
 }

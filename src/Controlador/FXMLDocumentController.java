@@ -79,9 +79,37 @@ public class FXMLDocumentController implements Initializable {
         }
     }
 
+    
     @FXML
-    private void agegar(ActionEvent event) {
+private void agegar(ActionEvent event) { 
+   try {
+        Paciente np = new Paciente();
+        Modelo m = new Modelo();
+    
+        // Verifica que el campo de ID no esté vacío antes de intentar la conversión
+        if (!txtID.getText().isEmpty()) {
+            np.setId(Integer.parseInt(txtID.getText()));
+        } else {
+            System.out.println("El campo ID no puede estar vacío.");
+            return;
+        }
+
+        np.setNombre(txtNombre.getText());
+        np.setFechaN(txtFechaNacimiento.getText());
+        np.setEstadoC(txtEC.getText());
+        np.setNivelEstud(txtNivelE.getText());
+        np.setOcupacion(txtOcupacion.getText());  
+
+        // Agrega un mensaje de depuración para verificar los datos antes de agregar el paciente
+        System.out.println("Paciente a agregar: " + np.toString());
+
+        m.agregarPaciente(np);
+        mostarPacientes();
+    } catch (NumberFormatException e) {
+        System.out.println("Error al convertir el ID a entero: " + e.getMessage());
     }
+}
+
 
     @FXML
     private void ActualizarP(MouseEvent event) {
@@ -103,4 +131,5 @@ public class FXMLDocumentController implements Initializable {
         ObservableList<Paciente> items = s.getServicios();
         this.tablaP.setItems(items);
     }
+    
 }
