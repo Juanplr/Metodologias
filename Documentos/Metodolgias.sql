@@ -1,5 +1,6 @@
 create database metodologias_2;
 use metodologias_2;
+drop database metodologias_2;
 CREATE USER 'UserRemoto'@'localhost' IDENTIFIED BY 'clinica16';
 GRANT ALL PRIVILEGES ON * . * TO 'UserRemoto'@'localhost';
 FLUSH PRIVILEGES;
@@ -36,7 +37,7 @@ select cedula from usuarios;
 select nombre_completo from usuarios;
 
 
-insert into paciente values(´'1','Juan Pérez', '15/05/1990', 'Casado', 'Licenciatura', 'Ingeniero');
+#insert into paciente values(´'1','Juan Pérez', '15/05/1990', 'Casado', 'Licenciatura', 'Ingeniero');
 insert into paciente values ('2','María González', '20/03/1985', 'Soltero', 'Bachillerato', 'Estudiante');
 insert into paciente values ('3','Ana Sánchez', '10/07/1995', 'Casado', 'Bachillerato', 'Abogado');
 insert into paciente values ('4','Luis García', '25/11/1982', 'Soltero', 'Doctorado', 'Profesor');
