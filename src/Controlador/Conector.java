@@ -9,9 +9,9 @@ public class Conector {
     private static Connection conexion;
     private static  Conector istancia;
     private static final String url = "jdbc:mysql://localhost:3306/metodologias_2";
-    private static final String user = "UserRemoto";
-    private static final String password ="ProyectoMetodo";
-    
+    private static final String user ="root";
+    private static final String password ="160216";
+
     private Conector(){}
     
     public Connection conectar(){

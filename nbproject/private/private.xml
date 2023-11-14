@@ -3,10 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/inigu/OneDrive/Documentos/NetBeansProjects/ProyectoMetodologias/src/Vista/popUpConfirmation.fxml</file>
             <file>file:/C:/Users/inigu/OneDrive/Documentos/NetBeansProjects/ProyectoMetodologias/src/Vista/popUpError.fxml</file>
             <file>file:/C:/Users/inigu/OneDrive/Documentos/NetBeansProjects/ProyectoMetodologias/src/Controlador/PopUpConfirmationController.java</file>
             <file>file:/C:/Users/inigu/OneDrive/Documentos/NetBeansProjects/ProyectoMetodologias/src/Controlador/PopUpErrorController.java</file>
+=======
+            <file>file:/C:/Users/14-dq2521/Documents/Metodologias/src/Controlador/Conector.java</file>
+            <file>file:/C:/Users/14-dq2521/Documents/Metodologias/src/Modelo/Paciente.java</file>
+            <file>file:/C:/Users/14-dq2521/Documents/Metodologias/src/Modelo/Modelo.java</file>
+            <file>file:/C:/Users/14-dq2521/Documents/Metodologias/src/Controlador/Main.java</file>
+            <file>file:/C:/Users/14-dq2521/Documents/Metodologias/src/Controlador/FXMLDocumentController.java</file>
+>>>>>>> 137649f0ff91ff2ccb31837704fb4ca96d1aa8b5
         </group>
     </open-files>
 </project-private>
