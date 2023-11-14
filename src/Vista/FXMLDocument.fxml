@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="proyectometodologias.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.FXMLDocumentController">
    <children>
       <VBox layoutX="22.0" layoutY="22.0" prefHeight="180.0" prefWidth="137.0" spacing="15.0">
          <children>
@@ -42,11 +42,11 @@
       </VBox>
       <VBox layoutX="159.0" layoutY="22.0" prefHeight="180.0" prefWidth="225.0" spacing="10.0">
          <children>
-            <TextField />
-            <TextField />
-            <TextField />
-            <TextField />
-            <TextField />
+            <TextField fx:id="txtID" />
+            <TextField fx:id="txtNombre" />
+            <TextField fx:id="txtApellido" />
+            <TextField fx:id="txtDireccion" />
+            <TextField fx:id="txtFechaNacimiento" />
          </children>
       </VBox>
       <TableView layoutX="22.0" layoutY="228.0" prefHeight="333.0" prefWidth="761.0">
@@ -58,8 +58,8 @@
             <TableColumn prefWidth="99.0" text="Nacimiento" />
         </columns>
       </TableView>
-      <Button layoutX="442.0" layoutY="100.0" mnemonicParsing="false" text="Agregar" />
-      <Button layoutX="542.0" layoutY="100.0" mnemonicParsing="false" text="Actualizar" />
-      <Button layoutX="651.0" layoutY="100.0" mnemonicParsing="false" text="Borrar" />
+      <Button fx:id="btnAgregar" layoutX="442.0" layoutY="100.0" mnemonicParsing="false" text="Agregar" />
+      <Button fx:id="btnActualizar" layoutX="542.0" layoutY="100.0" mnemonicParsing="false" text="Actualizar" />
+      <Button fx:id="btnEliminar" layoutX="651.0" layoutY="100.0" mnemonicParsing="false" text="Borrar" />
    </children>
 </AnchorPane>
